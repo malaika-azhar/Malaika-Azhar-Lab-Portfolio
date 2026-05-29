@@ -80,91 +80,131 @@ Configure VLANs, InterVLAN routing, VTP, Management VLAN, DHCP, SSH, Port Securi
 
 ---
 
-📋 Steps & Screenshots
+## 📋 Steps & Screenshots
 
-Step 1 — Build the Topology
-Set up all devices and connect cables exactly as shown above.  
-![Topology](./01-topology.png)
+### Step 1 — Build the Topology
+Set up all devices and connect cables exactly as shown above.
+![Topology](./screenshots/01-topology.png)
 
-Step 2 — Configure VTP on Switch1 (Server)
-Set Switch1 as VTP Server so it can push VLANs to Switch2 automatically.  
-![VTP Server](./02-vtp-server.png)
+---
 
-Step 3 — Configure VTP on Switch2 (Client)
-Set Switch2 as VTP Client so it receives VLANs from Switch1.  
-![VTP Client](./03-vtp-client.png)
+### Step 2 — Configure VTP on Switch1 (Server)
+Set Switch1 as VTP Server so it can push VLANs to Switch2 automatically.
+![VTP Server](./screenshots/02-vtp-server.png)
 
-Step 4 — Create VLANs on Switch1 Only
-Create VLAN 10, 20, 99 on Switch1. Switch2 will sync automatically via VTP.  
-![VLANs Created](./04-vlans-created.png)
+---
 
-Step 5 — Verify VLAN Sync
-Confirm VLANs appear on Switch2.  
-![VTP Sync](./05-vtp-sync.png)
+### Step 3 — Configure VTP on Switch2 (Client)
+Set Switch2 as VTP Client so it receives VLANs from Switch1.
+![VTP Client](./screenshots/03-vtp-client.png)
 
-Step 6 — Configure Switch1 Ports
-Assign VLANs on Switch1.  
-![Switch1 Ports](./06-switch1-ports.png)
+---
 
-Step 7 — Configure Switch2 Ports
-Assign VLANs on Switch2.  
-![Switch2 Ports](./07-switch2-ports.png)
+### Step 4 — Create VLANs on Switch1 Only
+Create VLAN 10, 20, 99 on Switch1. Switch2 will sync automatically via VTP.
+![VLANs Created](./screenshots/04-vlans-created.png)
 
-Step 8 — Unused Ports Security
-Disable unused ports.  
-![Unused Ports](./08-unused-ports.png)
+---
 
-Step 9 — Port Security
-Enable port security.  
-![Port Security](./09-port-security.png)
+### Step 5 — Verify VLAN Sync
+Confirm VLANs appear on Switch2.
+![VTP Sync](./screenshots/05-vtp-sync.png)
 
-Step 10 — Management VLAN
-Configure management VLAN.  
-![Management VLAN](./10-mgmt-vlan.png)
+---
 
-Step 11 — SSH Switches
-Enable SSH.  
-![SSH Switches](./11-ssh-switches.png)
+### Step 6 — Configure Switch1 Ports
+Assign VLANs on Switch1.
+![Switch1 Ports](./screenshots/06-switch1-ports.png)
 
-Step 12 — Router Configuration
-Configure router for interVLAN routing.  
-![Router Config](./12-router-config.png)
+---
 
-Step 13 — DHCP Pools
-Configure DHCP.  
-![DHCP Pools](./13-dhcp-pools.png)
+### Step 7 — Configure Switch2 Ports
+Assign VLANs on Switch2.
+![Switch2 Ports](./screenshots/07-switch2-ports.png)
 
-Step 14 — PC DHCP
-Verify DHCP IP assignment.  
-![PC DHCP](./14-pc-dhcp.png)
+---
 
-Step 15 — DHCP Binding
-Confirm leases.  
-![DHCP Binding](./15-dhcp-binding.png)
+### Step 8 — Unused Ports Security
+Disable unused ports.
+![Unused Ports](./screenshots/08-unused-ports.png)
 
-Step 16 — Pre ACL Ping Test
-Test connectivity before ACL.  
-![Pre ACL Ping](./16-pre-acl-ping.png)
+---
 
-Step 17 — ACL Configuration
-Configure ACL rules on the router/switch.
-![ACL Config](./17-acl-config.png)
+### Step 9 — Port Security
+Enable port security.
+![Port Security](./screenshots/09-port-security.png)
 
-Step 18 — ACL Test
+---
+
+### Step 10 — Management VLAN
+Configure management VLAN.
+![Management VLAN](./screenshots/10-mgmt-vlan.png)
+
+---
+
+### Step 11 — SSH Switches
+Enable SSH.
+![SSH Switches](./screenshots/11-ssh-switches.png)
+
+---
+
+### Step 12 — Router Configuration
+Configure router for InterVLAN routing.
+![Router Config](./screenshots/12-router-config.png)
+
+---
+
+### Step 13 — DHCP Pools
+Configure DHCP.
+![DHCP Pools](./screenshots/13-dhcp-pools.png)
+
+---
+
+### Step 14 — PC DHCP
+Verify DHCP IP assignment.
+![PC DHCP](./screenshots/14-pc-dhcp.png)
+
+---
+
+### Step 15 — DHCP Binding
+Confirm leases.
+![DHCP Binding](./screenshots/15-dhcp-binding.png)
+
+---
+
+### Step 16 — Pre ACL Ping Test
+Test connectivity before ACL.
+![Pre ACL Ping](./screenshots/16-pre-acl-ping.png)
+
+---
+
+### Step 17 — ACL Configuration
+Configure ACL rules on the router.
+![ACL Config](./screenshots/17-acl-config.png)
+
+---
+
+### Step 18 — ACL Test
 Verify ACL blocking/allowing traffic.
-![ACL Test](./18-acl-test.png)
+![ACL Test](./screenshots/18-acl-test.png)
 
-Step 19 — SSH Test
+---
+
+### Step 19 — SSH Test
 Test SSH remote access to switches.
-![SSH Test](./19-ssh-test.png)
+![SSH Test](./screenshots/19-ssh-test.png)
 
-Step 20 — Final Verification
-Check full network.  
-![Final Verify](./20-final-verify.png)
+---
 
-Step 21 — Save Config
-Save configuration.  
-![Save Config](./21-save-config.png)
+### Step 20 — Final Verification
+Check full network.
+![Final Verify](./screenshots/20-final-verify.png)
+
+---
+
+### Step 21 — Save Config
+Save configuration.
+![Save Config](./screenshots/21-save-config.png)
 
 
 
