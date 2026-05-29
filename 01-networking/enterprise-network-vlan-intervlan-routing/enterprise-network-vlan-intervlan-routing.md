@@ -146,11 +146,11 @@ Step 16 — Pre ACL Ping Test
 Test connectivity before ACL.  
 ![Pre ACL Ping](./16-pre-acl-ping.png)
 
-Step 17 — Switch1 Ports
+Step 17 — Switch1 Ports  
 Configure Switch1 VLAN ports.  
-![Switch1 Ports](./17-switch1-ports.png)
+![Switch1 Ports](./17-acl-config.png)
 
-Step 18 — ACL Test
+Step 18 — ACL Test  
 Verify ACL blocking/allowing traffic.  
 ![ACL Test](./18-acl-test.png)
 
